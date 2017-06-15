@@ -2,10 +2,7 @@
 
 **Clone and run for a quick way to see Electron in action.**
 
-<br> In this example, data is fetched from the DB, and logged 
-
-<br><h2>😬</h2>
-
+<br> In this example, data is fetched from the DB, and logged 😬
 <img src="mysql.PNG">
 
 Put your MySQL credentials in the 'index.html' file along with test queries.
