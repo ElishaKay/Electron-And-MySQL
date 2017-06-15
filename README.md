@@ -2,6 +2,10 @@
 
 **Clone and run for a quick way to see Electron in action.**
 
+<br> In this example, data is fetched from the DB, and logged 
+
+<br><h2>😬</h2>
+
 <img src="mysql.PNG">
 
 Put your MySQL credentials in the 'index.html' file along with test queries.
@@ -14,7 +18,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/ElishaKay/Electron-And-MySQL
 # Go into the repository
 cd electron-quick-start
 # Install dependencies
