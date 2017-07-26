@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+
   </head>
   <body>
+
+  <input type="text" value="This is some text" id="text" style="width: 150px;" />
+<br />
+<input type="button" value="Click Me" id="button" />
+
+
     <h1>Hello World!</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     We are using Node.js <script>document.write(process.versions.node)</script>,
@@ -15,15 +22,22 @@
     <input type="button" value="connect to mysql" id="btn"/>
   </body>
 
-  <script>
+
+ <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+
+  var rows= [];
+
   document.getElementById("btn").addEventListener("click", () => {
       var mysql = require("mysql");
 
       var connection = mysql.createConnection({
-        host:"localhost",
-        user:"root",
-        password: "123456",
-        database: "mylife"
+        host:"x",
+        user:"x",
+        password: "x",
+        database: "x"
       });
 
       connection.connect((err) => {
@@ -35,7 +49,7 @@
       });
 
       //Here we write the DB Queries
-      $queryString = 'SELECT * FROM `contacts2`;';
+      $queryString = "SELECT  `campaign`.`client_id` AS `client_id`, `campaign`.`campaign_name` AS `campaign_name`, `campaign`.`campaign_id` AS `campaign_id` FROM `campaign` LEFT JOIN `client` `client__via__client_id` ON `campaign`.`client_id` = `client__via__client_id`.`client_id` WHERE `client__via__client_id`.`client_id` = 276 LIMIT 2000"
 
       connection.query($queryString, (err, rows, fields) => { 
         if(err){
@@ -43,11 +57,28 @@
         }
 
         console.log(rows);
+
+        rows.forEach( (row) => { 
+          console.log(`${row.name} is in ${row.location}`); 
+          });
       });
 
       connection.end(() => {
         console.log("connection succesfully closed");
       });
   }, false);
+
+ text.val(rows[0]['campaign_id']);
+
+$(function () {
+    $('#button').on('click', function () {
+        var text = $('#text');
+        text.val(text.val() + ' after clicking');    
+    });
+});
+
+
+ 
+
   </script>
 </html>

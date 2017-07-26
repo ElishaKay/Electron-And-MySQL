@@ -1,0 +1,68 @@
+
+
+30 minutes - QA - Reviewing PT conversations
+
+2 hours - QA - Researching why Heroku crashed for 30 minutes this morning (Heroku eventually began responding again). Researching how to avoid metabase-heroku app crash in the future. Taking notes.  
+
+
+
+10 minutes - Customer Support - Call Elad to verify he understands bug and how to fix campaign
+
+1 hours - QA - testing out new version (0.9.231)
+
+1 hour - Customer Success - reviewing swiftic account - content and metrics
+
+1 hour - Sales - following-up with users who's trials have expired: ashley, brian, and rotem from inbound junction
+
+1 hour - Product Improvement - Writing out list of "next steps for Client Analytics dashboard" - relevant features and ideas
+
+30 minutes - Customer Success - Checking the activity of Nir from Heyoya and Ongage
+
+15 minutes - QA - reporting bug: "Responders" still getting automated follow-ups
+
+
+
+
+To-Do
+
+Next: 
+
+Report Bug about 
+
+ and Danny Roberts from Ongage - are the campaigns succesful (check the conversion rate), and the types of responses they're getting. Check only the past 2 weeks of both of these campaigns.
+
+
+
+(a) Done - Ask Ricardo about the snippets he uses for his follow-ups, and write notes about our Onboarding Process.
+
+(b) Following-up with Ashley regarding trying the software again (send her a sample CSV and the dashboard for Growth-X)
+
+
+
+All Added to PT
+
+c) Write out the next steps for our "Client Analytics dashboard". Link to the older story (now completed): https://www.pivotaltracker.com/story/show/148198135
+
+Ideas: (1) Need a pie chart which highlights all the users that sent invites via one specific campaign.
+Here is a pie chart showing the Campaign Breakdown (users): https://meta-g.herokuapp.com/dashboard/5
+
+1) Write out some ideas (in PT about Metabase dashboard for clients): 
+	a) The campaign-name column should be closer to the left.
+	b) Regarding the "Response Sent date", it should be ordered from most recently sent to oldest.
+
+- Need to find a solution to searching by Campaign ID, and User ID, and Message Type (either have more Iframes) or Create a Scroll-Down Menu which is dynamically generated with all the User ID's, Campaign ID's and Message Types.
+
+
+
+
+
+2) Test out some of the new features (once it's updated)
+
+3) Did Swiftic create a new campaign (they only had one campaign), so the question is whether they have 1 or more?
+
+
+
+
+
+
+
